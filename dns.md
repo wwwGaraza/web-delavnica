@@ -16,6 +16,13 @@ Kdor zakupi svojo domeno, lahko prosto razpolaga z njo in njenimi _poddomenami_.
 
 DNS je sestavljen iz različnih tipov zapisov. Za nas bosta najpomembnejša CNAME in A ali AAAA. CNAME uporabimo, če eno hočemo eno izmed poddomen usmeriti na neko drugo domeno. A in AAAA pa uporabimo, če želimo domeno usmeriti na nek IPv4 (A) ali IPv6 (AAAA) naslov.
 
-Poleg tega poznamo še veliko (drugih tipov DNS zapisov)[https://en.wikipedia.org/wiki/List_of_DNS_record_types], vendar za nas niso tako pomembni.
+Poleg tega poznamo še veliko [drugih tipov DNS zapisov](https://en.wikipedia.org/wiki/List_of_DNS_record_types) vendar za nas niso tako pomembni.
+
+## Uporabni ukazi
 
 Če hočeš preveriti, na kateri IP naslov neka domena kaže, lahko uporabiš `nslookup www.rtvslo.si` (Windows) ali `dig www.rtvslo.si` (Linux).
+
+## Vaja
+
+Poišči IP naslov za stran `amazon.com` in `google.com`.
+Vidiš kakšno zanimivo razliko med obema odgovoroma?
