@@ -1,9 +1,24 @@
 # GIT
-1. Narediš fork repozitorija
-2. `git clone git@github.com:<username>/web-delavnica.git`
 
-## git commit
-1. Spremeniš datoteke, ki jih želiš
-2. `git add <datoteka>`
-3. `git commit`
-4. `git push`
+## Osnovni workflow
+
+    # Najprej narediš fork repozitorija, če je to potrebno.
+
+    # Kloniraš repo
+    git clone git@github.com:<username>/<repo>.git
+    cd <repo>
+
+    # Narediš nov branch in zamenjaš nanj
+
+    git branch <nek-branch>
+    git checkout <nek-branch>
+    # ali pa
+    git checkout -b <nek-branch>
+
+    # Spremeniš datoteke, ki jih želiš in jih dodaš v staging area:
+    nano <datoteka>
+    git add <datoteka>
+
+    # Commit in push
+    git commit -m "Fixed a bug"
+    git push --set-upstream origin <nek-branch>
